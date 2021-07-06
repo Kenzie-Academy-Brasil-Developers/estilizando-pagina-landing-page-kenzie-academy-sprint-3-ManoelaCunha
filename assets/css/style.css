@@ -79,9 +79,53 @@ footer{}
 /* FOOTER */
 
 /* INICIAL */
-main{}
-/* INICIAL */
+main{
 
+}
+/* INICIAL */
+​section .secaoCursos{
+  background-color: rgb(255, 255, 255);
+  max-width: 100%;
+}
+.secaoCursos .secaoCursos_base{
+  border: 1px solid rgb(255, 255, 255);
+}
+.secaoCursos_base .base_title, .base_description{
+  margin: 15px auto;
+  max-width: 100%;
+  font-size: 25px;
+  color: #303030;
+  font-weight: bold;
+  text-align: center;
+}
+.base_description{
+  font-size: 20px;
+  font-weight: 300;
+}
+.secaoCursos_base .base_types{
+  display: flex;
+  max-width: 100%;
+  flex-flow: column wrap;
+  justify-content: space-around;
+}
+.base_types li{
+  display: flex;
+  margin: 10px auto;
+  max-width: 90%;
+  text-align: center;
+  color: #303030;
+  flex-flow: column nowrap;
+  justify-content: space-around;
+  align-items: center;
+}
+.base_types li img{
+  max-width: 120px;
+  margin-bottom: 15px;
+}
+.base_types li p{
+  margin: 15px 5px;
+  color: #818181;
+}
 /* EXTRAS */
 
 /* para estilizar a scrollbar */
