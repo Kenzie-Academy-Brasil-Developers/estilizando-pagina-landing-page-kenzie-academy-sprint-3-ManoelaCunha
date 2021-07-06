@@ -281,7 +281,7 @@ main{}
   max-width: 100%;
 }
 .secaoCursos .secaoCursos_base{
-  border: 1px solid rgb(255, 255, 255);
+  border: 5px solid rgb(151, 24, 24);
 }
 .secaoCursos_base .base_title, .base_description{
   margin: 15px auto;
@@ -318,6 +318,43 @@ main{}
 .base_types li p{
   margin: 15px 5px;
   color: #818181;
+}
+
+section .secaoCalendar{
+  background-color: rgb(255, 255, 255);
+  max-width: 100%;
+}
+.secaoCalendar .secaoCalendar_title{
+  font-size: 19px;
+  color: #303030;
+  text-align: center;
+  margin: 10px;
+}
+.secaoCalendar .secaoCalendar_description{
+  color: #818181;
+  margin: 10px;
+  text-align: center;
+  font-size: 15px;
+}
+.secaoCalendar .calendario{
+  display: flex;
+  border: 5px solid rgb(151, 24, 24);
+  flex-flow: column nowrap;
+  justify-content: space-around;
+}
+.calendario .calendario_linguagens{
+  display: flex;
+  background-color: aqua;
+  border: 3px solid black;
+  flex-flow: column nowrap;
+  margin: 10px;
+  padding: 15px;
+  align-items: center;
+}
+.calendario-data{
+  font-size: 36px;
+  color: #303030;
+  margin: 10px;
 }
 
 /* EXTRAS */
