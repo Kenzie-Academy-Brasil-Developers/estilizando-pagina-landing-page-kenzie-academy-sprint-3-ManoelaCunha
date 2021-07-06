@@ -29,7 +29,13 @@ family=Lato -> Títulos, textos
 /* FONTS */
 
 /* VARIÁVEIS */
-:root{}
+:root{
+    --theme-color-white: #FFFFFF;
+    --theme-color-light-blue: #007aff;
+    --theme-color-dark-blue: #00043e;
+    --theme-color-gray: #303030;
+    --theme-color-light-gray: #818181;
+}
   
 /* GERAL */
 html, body, figure, div, input, textarea, p, h1, h2, h3, h4, h5, h6, ul{
@@ -54,11 +60,16 @@ div.large-container{
     width: 100%;
     max-width: 1170px;
     margin:0 auto;
+    display: flex;
+    justify-content: space-between;
 }
 div.container{
     width: 100%;
     max-width: 1140px;
     margin:0 auto;
+}
+h2 {
+    font-family: 'Montserrat';
 }
 /* GERAL */
   
@@ -67,11 +78,68 @@ html{}
 /* HTML */
   
 /* BODY */
-body{}
+body{
+    font-family: 'Lato', sans-serif;
+}
 /* BODY */
   
 /* HEADER */
-header{}
+
+/*Manoela*/
+header.topo{
+    background-color: var(--theme-color-dark-blue);
+    padding: 16px;
+}
+
+.header__logo{
+    width: 100px;
+}
+
+.nav-container{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+#btn__menu{
+    display: none;
+}
+
+#icone{
+    border: none;
+    font-size: 2rem;
+    background-color: var(--theme-color-dark-blue);
+    color: var(--theme-color-light-gray);
+}
+
+.nav__menu{
+    display: none;
+}
+
+.nav__menu ul{
+    width: 190px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.nav__menu__link{
+    font-size: 13px;
+    color: var(--theme-color-white);
+    text-decoration: none;
+}
+
+.nav__menu__link:hover{
+    color: var(--theme-color-light-blue);
+    cursor: pointer;
+}
+
+#btn__menu:checked~.nav__menu{
+    display: block;
+}
+/*Manoela*/
+
 /* HEADER */
   
 /* FOOTER */
@@ -80,6 +148,89 @@ footer{}
 
 /* INICIAL */
 main{}
+
+/*Manoela*/
+.secaoDestaque{
+    background-color: var(--theme-color-dark-blue);
+}
+
+.secaoDestaque h2{
+    font-size: 35px;
+    font-weight: 400;
+    text-align: center;
+    padding: 20px 48px;
+    color: var(--theme-color-white);
+}
+
+.secaoDestaque p{
+    font-size: 21px;
+    text-align: center;
+    color: var(--theme-color-white);
+}
+
+.secaoDestaqueFormulario{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    border: none;
+}
+
+.secaoDestaqueFormulario__input{
+    border: none;
+    padding: 10px;
+    color: var(--theme-color-light-gray);
+    border-radius: 5px 0px 0px 5px;
+}
+
+.secaoDestaqueFormulario__btn{
+    border: none;
+    font-size:14px;
+    border-radius: 0px 5px 5px 0px;
+    color: var(--theme-color-white);
+    background-color: var(--theme-color-light-blue);
+}
+
+.secaoDestaqueFormulario__btn:hover{
+    color: var(--theme-color-dark-blue);
+}
+
+.secaoSobre{
+    padding: 78px;
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-col1 h2{
+    font-size: 20px;
+    text-align: left;
+    padding: 30px 0px;
+}
+
+.flex-col1 p{
+    font-size: 18px;
+    text-align: left;
+    padding: 30px 0px;
+}
+
+.flex-col1 span{
+    font-size: 16px;
+    text-align: left;
+    padding: 30px 0px;
+}
+
+.flex-col1 button{
+    width: 100%;
+    padding: 10px;
+    margin: 30px 0px;
+}
+
+.flex-col1 img{
+    width: 75%;
+    margin: 0 auto;
+}
+
+/*Manoela*/
+
 /* INICIAL */
 
 /* EXTRAS */
@@ -99,5 +250,50 @@ main{}
 /* MEDIA QUERIES */
     @media screen and (min-width: 400px) {}
   
-    @media screen and (min-width: 800px) {}
+    @media screen and (min-width: 800px) {
+
+    /*Manoela*/
+    header.topo{
+        padding: 10px 150px;
+    }
+
+    .nav-container{
+        flex-direction: row;
+        align-items: center;
+    }
+
+    #icone{
+        display: none;
+    }
+    
+    .nav__menu{
+        display: block;
+    }
+
+    .nav__menu ul{
+        width: 230px;
+        flex-direction: row;
+    }
+
+    .secaoDestaque{
+        background-image: url(/assets/img/background-destaque.webp);
+        padding-top: 130px;
+        padding-bottom: 200px;
+    }
+
+    .secaoDestaque h2{
+        font-size: 63px;
+        padding: 20px 43px;
+    }
+
+    .secaoDestaqueFormulario__input{
+        width: 465px;
+    }
+
+    .secaoDestaqueFormulario__btn{
+        width: 90px;
+    }
+    /*Manoela*/
+
+    }
 /* MEDIA QUERIES */
