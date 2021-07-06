@@ -177,30 +177,30 @@
       <!-- LISTA CALENDÁRIO -->
       <ul class="calendario">
 
-        <li class="calendario_linguagens">
+        <li class="calendario_linguagens linguagens">
           <span class="calendario-data">22/02</span>
-          <h3>HTML/CSS</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo consectetur quae commodi sed eos repellendus adipisci architecto provident, et animi sapiente, rerum fugit quod voluptatum officia ipsum maxime nobis explicabo!</p>
+          <h3 class="linguagens_title">HTML/CSS</h3>
+          <p class="linguagens_description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo consectetur quae commodi sed eos repellendus adipisci architecto provident, et animi sapiente, rerum fugit quod voluptatum officia ipsum maxime nobis explicabo!</p>
           <div class="calendario-data-rodape">
             <span>7mp</span>
             <button>Sign Up</button>
           </div>
         </li>
 
-        <li class="calendario_linguagens">
+        <li class="calendario_linguagens linguagens">
           <span class="calendario-data">23/02</span>
-          <h3>JavaScript</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo consectetur quae commodi sed eos repellendus adipisci architecto provident, et animi sapiente, rerum fugit quod voluptatum officia ipsum maxime nobis explicabo!</p>
+          <h3 class="linguagens_title">JavaScript</h3>
+          <p class="linguagens_description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo consectetur quae commodi sed eos repellendus adipisci architecto provident, et animi sapiente, rerum fugit quod voluptatum officia ipsum maxime nobis explicabo!</p>
           <div class="calendario-data-rodape">
             <span>7mp</span>
             <button>Sign Up</button>
           </div>
         </li>
 
-        <li class="calendario_linguagens">
+        <li class="calendario_linguagens linguagens">
           <span class="calendario-data">24/02</span>
-          <h3>Python</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo consectetur quae commodi sed eos repellendus adipisci architecto provident, et animi sapiente, rerum fugit quod voluptatum officia ipsum maxime nobis explicabo!</p>
+          <h3 class="linguagens_title">Python</h3>
+          <p class="linguagens_description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo consectetur quae commodi sed eos repellendus adipisci architecto provident, et animi sapiente, rerum fugit quod voluptatum officia ipsum maxime nobis explicabo!</p>
           <div class="calendario-data-rodape">
             <span>7mp</span>
             <button>Sign Up</button>
@@ -214,6 +214,8 @@
     <section class="secaoContato">
 
       <div class="flex">
+        
+        <h2 class="flex_titleTop">Contact</h2>
 
         <!-- COLUNA LADO ESQUERDO -->
         <div class="flex-col">
@@ -222,10 +224,10 @@
           
             <p>Contact us and we'll get back to you within 24 hours.</p>
             
-            <ul>
-              <li><a href="#">Chicago, US</a> </li>
-              <li><a href="tel:001515151515">+00 1515151515</a></li>
-              <li><a href="malito:myemail@something.com">myemail@something.com</a></li>
+            <ul class="secaoContato-iformacoes_registro registro">
+              <li class="registro_database--mark"><a class="registro_link" href="#">Chicago, US</a> </li>
+              <li class="registro_database--phone"><a class="registro_link" href="tel:001515151515">+00 1515151515</a></li>
+              <li class="registro_database--message"><a class="registro_link" href="malito:myemail@something.com">myemail@something.com</a></li>
             </ul>
 
           </div>
@@ -235,9 +237,9 @@
         <!-- COLUNA LADO DIRETO -->
         <div class="flex-col">
           
-          <h2>Contact</h2>
           
-          <form action="">
+          
+          <form class="flex-col_contact contact" action="">
 
             <div class="form-input-model">
               <label for="nome">Nome</label>
@@ -249,12 +251,12 @@
               <input type="text" placeholder="E-mail" id="email" name="email">
             </div>
 
-            <div class="form-input-model">
+            <div class="form-input-model model--text">
               <label for="mensagem">E-mail</label>
-              <textarea name="mensagem" id="mensagem"></textarea>
+              <textarea name="mensagem" id="mensagem" placeholder="Comment"></textarea>
             </div>
 
-            <input type="submit" value="Send">
+            <input class="contact_submit" type="submit" value="Send">
 
           </form>
 
