@@ -145,11 +145,25 @@ header.topo{
 /* HEADER */
   
 /* FOOTER */
-footer{}
+#btn__footer{
+  display: none;
+}
+
+#icone__footer{
+  font-size: 2rem;
+  color: var(--theme-color-light-blue);
+}
+
+.text__footer{
+  display: none;
+}
+
+#btn__footer:checked~.text__footer{
+  display: block;
+}
 /* FOOTER */
 
 /* INICIAL */
-main{}
 
 /*Manoela*/
 .secaoDestaque{
@@ -383,7 +397,7 @@ section .secaoCalendar{
 .calendario-data-rodape span{
   font-size: 32px;
   color: var(--theme-color-light-gray);
-  font-weight: bold;
+  font-weight: 500;
 }
 .calendario-data-rodape button{
   border: 2px solid var(--theme-color-light-blue)f;
@@ -476,6 +490,7 @@ section .secaoCalendar{
   text-decoration: none;
   padding: 5px;
   color: var(--theme-color-light-gray);
+  vertical-align: super;
 } 
 .registro_database--mark::before{
   content: url(icon/icons8-android-24.png);
@@ -515,16 +530,12 @@ footer a{
   
 
 /* MEDIA QUERIES */
+
     @media screen and (min-width: 800px){
         /*Manoela*/
         header.topo{
-            padding: 10px 150px;
+            padding: 13px 150px;
         }
-
-        .header__logo{
-            padding-top: 6px;
-        }
-
         .nav-container{
             flex-direction: row;
             align-items: center;
@@ -603,86 +614,98 @@ footer a{
             padding-left: 18px;
         }
         /*Manoela*/
-      .flex-col_contact .contact_submit {
-          margin: 5px 10px;
+
+        .flex-col_contact .contact_submit {
+            margin: 5px 10px;
         }   
+    
         /*Beatriz*/
-      .secaoCursos_base .base_types{
-        flex-flow: row wrap;
-        justify-content: space-between;
-        max-width: 1024px;
-        margin:0px auto;
+        .secaoCursos_base .base_types{
+          flex-flow: row wrap;
+          justify-content: space-between;
+          max-width: 1024px;
+          margin:0px auto;
         }
-      .base_types li{
-        margin: 50px 70px;
-        max-width: 30%;
+        .base_types li{
+          margin: 50px 70px;
+          max-width: 30%;
         }
-      .base_types li p{
-        margin: 0px;
-        text-align: center;
-        width: 150px;
+        .base_types li p{
+          margin: 0px;
+          text-align: center;
+          width: 150px;
         }
-      .secaoCalendar .calendario{
-        flex-flow: row nowrap;
-        margin: 0% 15% 10%;
+        .secaoCalendar .calendario{
+          flex-flow: row nowrap;
+          margin: 0% 15% 10%;
         }
-      .secaoCalendar .secaoCalendar_title{
-        margin: 40px 0px 20px;
+        .secaoCalendar .secaoCalendar_title{
+          margin: 40px 0px 20px;
         }
-      .calendario .calendario_linguagens{
-        margin: 10px;
-        }   
-      .calendario_linguagens .linguagens_title{
-        margin: 35px 0px;
+        .calendario .calendario_linguagens{
+          margin: 10px;
+          }   
+        .calendario_linguagens .linguagens_title{
+          margin: 35px 0px;
         }
-      .calendario-data-rodape{
-        margin: 10px;
+        .calendario-data-rodape{
+          margin: 10px;
         }
-      .calendario-data-rodape button{
-        width: 60%;
-        font-size: 32px;
+        .calendario-data-rodape button{
+          width: 60%;
+          font-size: 32px;
         }
-      .calendario-data-rodape button:hover{
-        background-color: var(--theme-color-dark-blue);
-        color: var(--theme-color-gray);
-        border-radius: 10px;
+        .calendario-data-rodape button:hover{
+          background-color: var(--theme-color-dark-blue);
+          border-radius: 10px;
         }
-      .contact_submit:hover{
-        font-size: 18px;
-        padding: 7px;
-        font-weight: bold;
+        .contact_submit:hover{
+          font-size: 18px;
+          height: 39px;
+          font-weight: bold;
         }
-      .secaoContato .flex{
-        flex-flow: row wrap;
-        padding: 30px 100px;
-        max-width: 90%;
+        .secaoContato .flex{
+          flex-flow: row wrap;
+          padding: 30px 100px;
+          max-width: 90%;
         }
-      .flex .flex_titleTop{
-        margin: 2% 10%;
-        flex: 1 0 auto;
+        .flex .flex_titleTop{
+          margin: 2% 10%;
+          flex: 1 0 auto;
         }
-      .flex .flex-col{
-        width: 50%;
+        .flex .flex-col{
+          width: 50%;
         }
-      .secaoContato-informacoes{
-        padding: 20px;
+        .secaoContato-informacoes{
+          padding: 20px;
         }
-      .flex-col .flex-col_contact{
-        flex-flow: row wrap;
-        justify-content: flex-end;
-        align-items: baseline;
-        margin: 0px;
-        height: 340px;
+        .flex-col .flex-col_contact{
+          flex-flow: row wrap;
+          justify-content: flex-end;
+          align-items: baseline;
+          margin: 0px;
+          height: 340px;
         }
-      .flex-col_contact .form-input-model{
-        width: 50%;
-        padding: 10px;
+        .flex-col_contact .form-input-model{
+          width: 50%;
+          padding: 10px;
         }
-      .model--text{
-        flex: 1 0 90%;
+        .model--text{
+          flex: 1 0 90%;
         }
-      .form-input-model textarea{
-        margin-bottom: 30px;
-      }
+        .form-input-model textarea{
+          margin-bottom: 30px;
+        }
+
+        /*Footer*/
+        .text__footer{
+          display: block;
+        }
+
+        #btn__footer:checked~.text__footer{
+          display: none;
+        }
+        /*Footer*/
+    }
+
 /* MEDIA QUERIES */
-}
