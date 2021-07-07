@@ -161,6 +161,7 @@ main{}
     font-weight: 400;
     text-align: center;
     padding: 20px 48px;
+    text-transform: none;
     color: var(--theme-color-white);
 }
 
@@ -509,6 +510,11 @@ footer{
         header.topo{
             padding: 10px 150px;
         }
+
+        .header__logo{
+            padding-top: 6px;
+        }
+
         .nav-container{
             flex-direction: row;
             align-items: center;
