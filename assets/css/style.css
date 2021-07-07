@@ -321,7 +321,7 @@ main{}
 
 section .secaoCalendar{
   background-color: var(--theme-color-white);
-  max-width: 100%;
+  max-width: 1024rem;
 }
 .secaoCalendar .secaoCalendar_title{
   font-size: 19px;
@@ -350,14 +350,16 @@ section .secaoCalendar{
 }
 .calendario-data{
   font-size: 36px;
-  color: #ffffff;
+  color: var(--theme-color-white);
   background-color: var(--theme-color-dark-blue);
   text-align: center;
-  padding: 30px 0px;
+  padding: 35px 0px;
+  margin: -1px 0px;
   width: 101%;
 }
 .calendario_linguagens .linguagens_title{
   font-size: 19px;
+  font-weight: 500;
   padding: 20px 0px;
   color: var(--theme-color-gray);
 } 
@@ -393,11 +395,15 @@ section .secaoCalendar{
   height: 50px;
   text-align: center;
 }
+.secaoContato{
+  background-color: var(--theme-color-beige);
+}
 .secaoContato .flex{
   display: flex;
+  margin: 0px auto;
+  max-width: 1024rem;
   flex-direction: column;
-  padding: 30px;
-  background-color: #e2e0e0;
+  padding: 30px 55px;
 }
 .flex-col .flex-col_contact{
   display: flex;
@@ -487,6 +493,10 @@ footer{
   margin: 20px;
   text-align: center;
   color: var(--theme-color-light-gray);
+}
+footer a{
+  text-decoration: none;
+  color: var(--theme-color-light-blue);
 }
 
 /* Beatriz */
@@ -614,7 +624,7 @@ footer{
         }
       .secaoCalendar .calendario{
         flex-flow: row nowrap;
-        margin: 0% 10% 10%;
+        margin: 0% 15% 10%;
         }
       .secaoCalendar .secaoCalendar_title{
         margin: 40px 0px 20px;
@@ -629,7 +639,8 @@ footer{
         margin: 10px;
         }
       .calendario-data-rodape button{
-        width: 50%;
+        width: 60%;
+        font-size: 32px;
         }
       .calendario-data-rodape button:hover{
         background-color: var(--theme-color-dark-blue);
@@ -637,17 +648,17 @@ footer{
         border-radius: 10px;
         }
       .contact_submit:hover{
-        border: 0px inset rgba(24,164,23,0.66);
-        border-radius: 20px;
         font-size: 18px;
-        padding: 8px;
-        color: var(--theme-color-light-gray);
+        padding: 7px;
+        font-weight: bold;
         }
       .secaoContato .flex{
         flex-flow: row wrap;
+        padding: 30px 100px;
+        max-width: 90%;
         }
       .flex .flex_titleTop{
-        margin: 0% 10%;
+        margin: 2% 10%;
         flex: 1 0 auto;
         }
       .flex .flex-col{
